@@ -1,0 +1,15 @@
+/* A teacher has finished grading their students' tests and needs your help 
+to calculate the average score for the class.*/
+
+function getAverage(scores) {
+    let totalSum = 0
+        for (let i = 0; i < scores.length; i++){
+            totalSum += scores[i]
+        }
+    
+    let average = totalSum / scores.length
+    return average
+    }
+
+console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));
+console.log(getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));
